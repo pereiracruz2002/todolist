@@ -11,4 +11,8 @@ export class Login {
 
   }
 
+  doRegister(){
+  	this.navCtrl.push(Registrar)
+  }
+
 }

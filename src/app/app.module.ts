@@ -12,7 +12,9 @@ import { Login } from '../pages/login/login';
   declarations: [
     MyApp,
     HomePage,
-    Login
+    Login,
+    Registrar
+
   ],
   imports: [
     BrowserModule,
@@ -22,11 +24,13 @@ import { Login } from '../pages/login/login';
   entryComponents: [
     MyApp,
     HomePage,
-    Login
+    Login,
+    Registrar
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    LoginProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

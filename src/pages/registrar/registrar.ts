@@ -6,10 +6,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'registrar.html'
 })
 export class Registrar {
+	credencial:Credencial;
+	constructor(public navCtrl: NavController, public loginProvider:loginProvider) {
+  		this.credencial = new Credencial();
+  	}
 
-  constructor(public navCtrl: NavController) {
-  	//public loginProvider:loginProvider
-
-  }
+  	doRegister(){
+  		this.loginProvider.registrarUsuario(this.credencial);
+  	}
 
 }
